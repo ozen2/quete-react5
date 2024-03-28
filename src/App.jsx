@@ -41,8 +41,8 @@ function App() {
 
   return (
     <>
-      {pokemonIndex > 0 ? < button onClick={handleClick}>Précédent</button> : <button disabled></button>}
-      {pokemonIndex < pokemonList.length - 1 ? < button onClick={handleClick2}>Suivant</button> : <button disabled none></button>}
+      {pokemonIndex > 0 ? < button onClick={handleClick}>Précédent</button> : <></>}
+      {pokemonIndex < pokemonList.length - 1 ? < button onClick={handleClick2}>Suivant</button> : <></>}
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
     </>
   )
